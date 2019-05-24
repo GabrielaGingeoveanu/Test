@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a[50],i,j,M,n;
+    cout<<"n="; cin>>n;
+    for(i=0;i<n;i++){
+        cout<<"a["<<i<<"]=";cin>>a[i];
+    }
+
+    cout<<"M="; cin>>M;
+
+    for(i=0;i<n;i++)
+        for(j=0;j<n;j++)
+            if(a[i]-a[j]==M)
+                cout<<i<<' '<<j<<endl;
+    return 0;
+}
